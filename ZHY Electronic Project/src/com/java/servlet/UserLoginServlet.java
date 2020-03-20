@@ -28,25 +28,7 @@ public class UserLoginServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		User user = new User();
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		System.out.println(username+" "+password);
 		
-		user.setUsername(username);
-		user.setPassword(password);
-		
-		UserDao userdao=new UserDaoImpl();
-		User us=userdao.login(user);
-		
-		System.out.println(us);
-		if(us!=null){
-			request.setAttribute("info", "Yes-0");
-			request.getRequestDispatcher("/index/UserMain.jsp").forward(request, response);
-		}else{
-			request.setAttribute("info", "No-1");
-			request.getRequestDispatcher("/index/UserLogin.jsp").forward(request, response);
-		}
 	}
 
 }

@@ -13,7 +13,7 @@ public class BaseDao {
 	static final String user="root";
 	static final String password="WWP.nwcd@123";
 	
-	public static Connection getCon() throws ClassNotFoundException, SQLException{
+	public static Connection getCon() throws SQLException, ClassNotFoundException{
 		Class.forName(driver);
 		Connection con=DriverManager.getConnection(url, user, password);
 		System.out.println("321");

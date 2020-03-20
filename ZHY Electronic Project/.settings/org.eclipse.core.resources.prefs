@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/com/java/model/jdbc.java=UTF-8
+encoding//WebContent/index/AdminMain.jsp=UTF-8
+encoding//WebContent/index/UserList.jsp=UTF-8
+encoding//src/com/java/dao/impl/UserDaoImpl.java=UTF-8
+encoding//src/com/java/servlet/AdminLoginServlet.java=UTF-8
