@@ -53,8 +53,10 @@ public class AdminLoginServlet extends HttpServlet {
 		System.out.println(ad);
 		if(ad!=null){
 			request.getRequestDispatcher("/index/AdminMain.jsp").forward(request, response);
+			
 		}else{
 			request.getRequestDispatcher("/index/AdminLogin.jsp").forward(request, response);
+			
 		}
 	}
 

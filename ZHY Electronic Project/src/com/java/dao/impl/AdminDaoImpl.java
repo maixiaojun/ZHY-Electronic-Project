@@ -19,7 +19,7 @@ public class AdminDaoImpl implements AdminDao{
 		ResultSet rs=null;
 		try {
 			con=BaseDao.getCon();
-			String sql="select * from electronic.admin where adminname=? and password=? ";
+			String sql="select * from paperless.admin where adminname=? and password=? ";
 			ps=con.prepareStatement(sql);
 			ps.setString(1, admin.getAdminname());
 			ps.setString(2, admin.getPassword());
@@ -28,7 +28,7 @@ public class AdminDaoImpl implements AdminDao{
 			if(rs.next()){
 				admins=new Admin();
 				
-				admins.setAdmin_id(rs.getInt("admin_id"));
+				//admins.setAdmin_id(rs.getInt("admin_id"));
 				admins.setAdminname(rs.getString("adminname"));
 				admins.setPassword(rs.getString("password"));
 				

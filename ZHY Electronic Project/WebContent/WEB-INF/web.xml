@@ -2,7 +2,15 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>ZHY Electronic Project</display-name>
   
-  <servlet>
+   <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   <servlet>
   <servlet-name>UserInfoServlet</servlet-name>
   <servlet-class>com.java.servlet.UserInfoServlet</servlet-class>
   </servlet>
@@ -15,5 +23,5 @@
   <welcome-file-list>
   <welcome-file>UserList.jsp</welcome-file>
   </welcome-file-list>
-  
+
 </web-app>
